@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1353498-903B-498E-8D3C-B755F54F7651}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RSEscapamentos</RootNamespace>
+    <AssemblyName>RSEscapamentos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base_Dados.cs" />
+    <Compile Include="FRM_Alterar_Senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Alterar_Senha.Designer.cs">
+      <DependentUpon>FRM_Alterar_Senha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Calcular_Fechamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Calcular_Fechamento.Designer.cs">
+      <DependentUpon>FRM_Calcular_Fechamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Admin.Designer.cs">
+      <DependentUpon>FRM_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Cadastrar_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Cadastrar_Cliente.Designer.cs">
+      <DependentUpon>FRM_Cadastrar_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Detalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Detalhes.Designer.cs">
+      <DependentUpon>FRM_Detalhes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Editar.Designer.cs">
+      <DependentUpon>FRM_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Forma_Pagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Forma_Pagamento.Designer.cs">
+      <DependentUpon>FRM_Forma_Pagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Fornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Fornecedores.Designer.cs">
+      <DependentUpon>FRM_Fornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Inicio.Designer.cs">
+      <DependentUpon>FRM_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Login.Designer.cs">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Pendentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Pendentes.Designer.cs">
+      <DependentUpon>FRM_Pendentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Estoque.Designer.cs">
+      <DependentUpon>FRM_Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Servicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Servicos.Designer.cs">
+      <DependentUpon>FRM_Servicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Visulizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Visulizar.Designer.cs">
+      <DependentUpon>FRM_Visulizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRM_Alterar_Senha.resx">
+      <DependentUpon>FRM_Alterar_Senha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Calcular_Fechamento.resx">
+      <DependentUpon>FRM_Calcular_Fechamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Admin.resx">
+      <DependentUpon>FRM_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Cadastrar_Cliente.resx">
+      <DependentUpon>FRM_Cadastrar_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Detalhes.resx">
+      <DependentUpon>FRM_Detalhes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Editar.resx">
+      <DependentUpon>FRM_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Estoque.resx">
+      <DependentUpon>FRM_Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Forma_Pagamento.resx">
+      <DependentUpon>FRM_Forma_Pagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Fornecedores.resx">
+      <DependentUpon>FRM_Fornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Inicio.resx">
+      <DependentUpon>FRM_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Login.resx">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Pendentes.resx">
+      <DependentUpon>FRM_Pendentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Servicos.resx">
+      <DependentUpon>FRM_Servicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Visulizar.resx">
+      <DependentUpon>FRM_Visulizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icone.ico" />
+    <None Include="Resources\ClientesRS.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
